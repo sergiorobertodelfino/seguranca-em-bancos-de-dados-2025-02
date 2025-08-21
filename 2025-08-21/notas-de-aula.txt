@@ -1,0 +1,25 @@
+Atualiza os Repositórios
+apt update
+
+Instala o MySQL
+apt install mysql-server -y
+
+Verifica o Status do MySQL
+service mysql status
+
+Inicia o MySQL
+service mysql start
+
+Para o MySQL
+service mysql stop
+
+Conectar no MySQL
+mysql -uusuario 
+mysql -uroot
+
+Limpar Tela
+system clear
+
+Sair do MySQL
+exit
+
