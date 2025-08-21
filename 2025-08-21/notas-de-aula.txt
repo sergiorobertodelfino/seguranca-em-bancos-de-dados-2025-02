@@ -23,3 +23,14 @@ system clear
 Sair do MySQL
 exit
 
+Lista os Bancos de Dados
+show databases;
+
+Cria um Banco de Dados
+create database fatec;
+
+Remove um Banco de Dados
+drop database fatec;
+
+Selecionar um Banco de Dados
+use fatec;
