@@ -1,0 +1,10 @@
+Autenticar com um Usuário Diferente do ROOT
+sudo mysql -usergio -p
+
+Tipos de Permissões
+all, create, drop, insert, select, update, delete, ..., usage
+
+Escopos
+Global: *.*
+Banco: fatec.*
+Tabela: fatec.alunos

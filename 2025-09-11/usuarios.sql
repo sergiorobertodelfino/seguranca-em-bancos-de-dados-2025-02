@@ -29,3 +29,20 @@ identified by 'Fatec#456';
 -- Exibe os usuários
 select user, host
 from mysql.user;
+
+-- Exibe as permissões de um usuário
+show grants for root@localhost;
+show grants for sergio@localhost;
+
+-- Define as permissões de um usuário
+grant create, drop, insert, select, update, delete
+on *.*
+to sergio@localhost;
+
+grant insert, select
+on fatec.*
+to patricia@'%';
+
+-- Exibe as permissões de um usuário
+show grants for sergio@localhost;
+show grants for patricia@'%';
