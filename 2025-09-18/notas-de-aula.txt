@@ -1,0 +1,33 @@
+REMOVER UMA PERMISSÃO
+
+revoke create, drop, delete
+on fatec.*
+from sergio@localhost;
+
+revoke all
+on *.*
+from patricia@'%';
+
+APAGAR UM GRUPO
+drop role administrador;
+
+EXECUTAR UM SCRIPT SQL
+source 2025-09-18/grupos.sql
+
+REMOVER A PERMISSÃO DE UM GRUPO
+revoke create, drop
+on *.*
+from administrador;
+
+EXIBIR OS AVISOS
+show warnings;
+
+REMOVER UM USUÁRIO DE UM GRUPO
+revoke administrador, usuario
+from sergio@localhost;
+
+VISUALIZAR O GRUPO DO USUÁRIO AUTENTICADO
+select current_role();
+
+SELECIONAR UM GRUPO DO USUÁRIO AUTENTICADO
+set role administrador;
